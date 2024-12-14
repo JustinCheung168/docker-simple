@@ -28,7 +28,7 @@ RUN ln -fs /usr/bin/gcc-${GCC_VERSION} /usr/bin/gcc && \
     ldconfig
 
 # Add a non-root user
-ARG USERNAME="default-user"
-RUN useradd -m ${USERNAME}
-USER ${USERNAME}
-WORKDIR /home/${USERNAME}
+ARG DEFAULT_USER="default-user"
+RUN useradd -m ${DEFAULT_USER}
+USER ${DEFAULT_USER}
+WORKDIR /home/${DEFAULT_USER}
