@@ -16,7 +16,7 @@ DEFAULT_USER="default-user"
 VOLMAPDIR=${PROJECT_ROOT}
 
 # Directory to enter the container at.
-WORKDIR=${PROJECT_ROOT}
+WORKDIR=${PROJECT_ROOT}/build
 
 echo "Entering container of image: ${IMAGE}"
 
